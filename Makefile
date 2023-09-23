@@ -1,4 +1,3 @@
 install:
     poetry install
-
-poetry run brain-games
+    poetry run brain-games
