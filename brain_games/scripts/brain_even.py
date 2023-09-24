@@ -1,26 +1,40 @@
-import random
-from brain_games.cli import uname
+from random import randint
 
 
-def is_even(numbers):
-    return numbers % 2 == 0
+def main():
+    print('Welcome to the Brain Games!')
+    uname = input('May I have your name? ')
+    print('Hello, ' + uname + '!')
+    print('Answer "yes" if the number is even, otherwise answer "no".')
+    correct_answers = 0
+
+    while correct_answers < 3:
+        number = randint(1, 9999999)
+        print("Question: " + str(number))
+        join = input("Your answer: ")
+
+        if number % 2 == 0:
+            correct_answer = 'yes'
+        else:
+            correct_answer = 'no'
+
+        if correct_answer == join.lower():
+            correct_answers += 1
+            print('Correct!')
+        else:
+            print("'" + join + "' is the wrong answer ;(. Correct answer was '" + correct_answer + "'.")
+            print("Let's try again, " + uname + "!")
+            break
+
+    if correct_answers == 3:
+        print('Congratulations, ' + uname + '!')
 
 
-print("Answer 'yes' if the number is even, otherwise answer 'no'.")
+if __name__ == "__main__":
+    main()
 
-correct_answers = 0
 
-while correct_answers < 3:
-    number = random.randint(1, 100)
-    print("Question: " + str(number))
-    user_answer = input("Your answer: ").lower()
 
-    if (user_answer == "yes" and is_even(number)) or (user_answer == "no" and not is_even(number)):
-        print("Correct!")
-        correct_answers += 1
-    else:
-        print("'" + user_answer + "' is wrong answer ;(. Correct answer was '" + ('yes' if is_even(number) else 'no') + "'.")
-        print("Let's try again, " + uname + "!")
-        break
 
-print("Congratulations, " + uname + "!")
+
+
