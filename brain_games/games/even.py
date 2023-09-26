@@ -9,4 +9,3 @@ def generate_round_data():
     question = f'{value}'
     right = value % 2 and 'no' or 'yes'
     return question, right
-        
