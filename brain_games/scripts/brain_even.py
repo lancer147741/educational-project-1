@@ -1,7 +1,7 @@
 from random import randint
 
 
-def main():
+def call():
     print('Welcome to the Brain Games!')
     YourName = input('May I have your name? ')
     print('Hello, ' + YourName + '!')
