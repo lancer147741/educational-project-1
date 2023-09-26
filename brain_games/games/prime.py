@@ -18,3 +18,4 @@ def generate_round_data():
     right = is_prime(number) and 'yes' or 'no'
     question = number
     return question, str(right)
+    
