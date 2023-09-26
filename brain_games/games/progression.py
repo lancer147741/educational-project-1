@@ -21,3 +21,4 @@ def generate_round_data():
     progression[random_index] = '..'
     question = list(map(str, progression))
     return ' '.join(question), str(right)
+    
