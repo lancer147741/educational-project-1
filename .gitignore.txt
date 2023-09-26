@@ -1,4 +1,8 @@
 .venv/
-pyenv/bin/python
-pyenv/lib64/
-README.md
+.venv
+__pycache__
+/__pycache__
+dist/
+.idea
+dist
+test.md
