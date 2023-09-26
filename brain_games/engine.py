@@ -10,9 +10,9 @@ def play(game):
     for _ in range(ROUNDS_COUNT):
         question, right = game.generate_round_data()
         print(f'Question: {question}')
-        Answer = prompt.string('Your Answerer: ')
-        if Answer != right:
-            print(f"'{Answer}' is wrong Answerer ;(. Correct Answerer was '{right}'.")
+        answ = prompt.string('Your answer: ')
+        if answ != right:
+            print(f"'{answ}' is wrong answer ;(. Correct answer was '{right}'.")
             print(f"Let's try again, {name}!")
             break
         print('Correct!')
