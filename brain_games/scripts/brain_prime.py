@@ -23,10 +23,10 @@ def main():
         else:
             print(
                 f"Sorry, '{user_answer}' is the wrong answer ;(. Correct answer was '{right_answer}'.")
-            print("Game over, " + name + "! You won", wins, "times.")
+            print(f"Let's try again, '{name}'!")
             break
-
-    print(f"Congratulations, {name}! You won {wins} times!")
+    if wins == 3:
+        print(f"Congratulations, {name}!")
 
 
 def is_prime(number):

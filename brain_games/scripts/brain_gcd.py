@@ -31,7 +31,7 @@ def main():
         else:
             print(
                 f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
-            print("Let's try again, " + name + "!")
+            print(f"Let's try again, '{name}'!")
             break
 
     if num_correct == num_attempts:
