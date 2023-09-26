@@ -3,8 +3,8 @@ from random import randint
 
 def main():
     print('Welcome to the Brain Games!')
-    YourName = input('May I have your name? ')
-    print('Hello, ' + YourName + '!')
+    your_name = input('May I have your name? ')
+    print('Hello, ' + your_name + '!')
     print('Answer "yes" if the number is even, otherwise answer "no".')
     correct_answers = 0
 
@@ -24,11 +24,11 @@ def main():
         else:
             print(
                 "'" + join + "' is the wrong answer ;(. Correct answer was '" + correct_answer + "'.")
-            print("Let's try again, " + YourName + "!")
+            print("Let's try again, " + your_name + "!")
             break
 
     if correct_answers == 3:
-        print('Congratulations, ' + YourName + '!')
+        print('Congratulations, ' + your_name + '!')
 
 
 if __name__ == "__main__":

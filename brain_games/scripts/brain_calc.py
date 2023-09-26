@@ -4,9 +4,9 @@ import random
 def welcome_message():
     print('brain-calc\n')
     print('Welcome to the Brain Games!')
-    user_name = input('May I have your name? ')
-    print(f'Hello, {user_name}!\n')
-    return user_name
+    your_name = input('May I have your name? ')
+    print(f'Hello, {your_name}!\n')
+    return your_name
 
 
 def generate_question():
@@ -25,7 +25,7 @@ def generate_question():
 
 
 def main():
-    user_name = welcome_message()
+    your_name = welcome_message()
     correct_answers = 0
     rounds_to_win = 3
 
@@ -42,10 +42,10 @@ def main():
         else:
             print(
                 f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
-            print(f"Let's try again, {user_name}!\n")
+            print(f"Let's try again, {your_name}!\n")
             exit(0)
 
-    print(f'Congratulations, {user_name}!')
+    print(f'Congratulations, {your_name}!')
 
 
 if __name__ == "__main__":
