@@ -11,3 +11,4 @@ def generate_round_data():
     right = math.gcd(number_a, number_b)
     question = f'{number_a} {number_b}'
     return question, str(right)
+    
