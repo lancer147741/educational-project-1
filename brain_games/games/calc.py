@@ -19,3 +19,4 @@ def generate_round_data():
             right = number_a + number_b
             question = f'{number_a} + {number_b}'
     return question, str(right)
+    
